@@ -71,10 +71,10 @@ def title(url, proxy):
 				continue
 			urlin = bool(url in site)#Url Is In Quiry
 			#print(urlin)
-			if urlin == False:
+			#if urlin == False:
 				#site = (url +"" +site)
 				#print(site + " Added ext. was - " + url) # if the url isnt showing the website and just the path uncommit these lines
-			else: pass
+			#else: pass
 			print("\n [!] Found Branch: " +site)
 			if site not in sitelists:
 				try:
