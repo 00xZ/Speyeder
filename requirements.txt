@@ -1,0 +1,8 @@
+requests 
+BeautifulSoup
+lxml
+fnmatch
+threading
+re
+random
+urllib3
