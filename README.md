@@ -10,6 +10,13 @@ Has two output files. One with the links along with the title of the page, anoth
 # Use: Python3
 
 speyeder.py -h
+
 Proxy use: speyeder.py [Server] -p 1.2.3.4
+
 Scan file with proxy: speyeder.py -f filename -p 1.2.3.4
+
 Scan with file: speyeder.py -f filename
+
+# js_crawl.py
+
+Same concept just looks for JavaScript files.
