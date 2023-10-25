@@ -38,8 +38,8 @@ def title(url, proxy):
 			urlin = bool(url in site)#Url Is In Quiry
 			#print(urlin)
 			if urlin == False:
-				site = (url +"/" +site)
-				print(site + " Added ext. was - " + url)
+				site = (url +"" +site)
+				#print(site + " Added ext. was - " + url)
 			else: pass
 			print("\n [!] Found Branch: " +site)
 			if site not in sitelists:
@@ -73,7 +73,7 @@ def whatitbe(ip, proxy):
 	else:
 		proxy = {"http": "http://" +proxy}
 	#print(proxy)
-	headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36", "Content-Type":"*"}
+	headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) YA boy Eyezik AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36", "Content-Type":"*"}
 	#print(headers)
 	try:
 		#print("Debug 1 " + url)
@@ -86,14 +86,17 @@ def whatitbe(ip, proxy):
 		pass
 def main():
 	presentation()
+	fo = open("output.txt", "w")
+	fo.write("\n")
+	fo.close
 	count = 0
 	if str(sys.argv[1]) == "-h":
 		print("Use:")
 		print("    Make sure to add https://")
-		print("    Single server scan: speyeder.py [Server]")
-		print("    Scan with proxy: speyeder.py [Server] -p 1.2.3.4")
-		print("    Scan with proxy: speyeder.py -f filename -p 1.2.3.4")
-		print("    Scan ips in file use: speyeder.py -f filename")
+		print("    Single server scan: sqleye.py [Server]")
+		print("    Scan with proxy: sqleye.py [Server] -p 1.2.3.4")
+		print("    Scan with proxy: sqleye.py -f filename -p 1.2.3.4")
+		print("    Scan ips in file use: sqleye.py -f filename")
 	elif str(sys.argv[1]) == "-f":
 		input_file = open(sys.argv[2])
 		proxy = ('')
