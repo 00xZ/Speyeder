@@ -5,6 +5,8 @@ Works by searching for every href, checking if its already been found, then goin
 
 Contains a blacklist var that blocks from scanning sites such as google, facebook, etc. Add your own as needed.
 
+Has two output files. One with the links along with the title of the page, another with just links. as of now they write to a continuous file.
+
 # Use: Python3
 
 speyeder.py -h
